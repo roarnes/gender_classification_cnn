@@ -19,6 +19,3 @@ There are ten different images of each of 40 distinct subjects. For some subject
 3. [The Japanese Female Facial Expression (JAFFE) Database](http://www.kasrl.org/jaffe.html)
 
 The database contains 213 images of 7 facial expressions (6 basic facial expressions + 1 neutral) posed by 10 Japanese female models. Each image has been rated on 6 emotion adjectives by 60 Japanese subjects. The database was planned and assembled by Michael Lyons, Miyuki Kamachi, and Jiro Gyoba.
-
-### Result
-
