@@ -1,4 +1,5 @@
 #import libraries from keras
+import keras
 from keras.models import Sequential
 from keras.layers import Conv2D
 from keras.layers import MaxPooling2D
@@ -36,9 +37,9 @@ train_datagen = ImageDataGenerator (rescale = 1./255, shear_range = 0.2, zoom_ra
 
 test_datagen = ImageDataGenerator(rescale = 1./255)
 
-training_set = train_datagen.flow_from_directory ('/Users/arnes/Desktop/Tugas_MV/Training_Data/', target_size = (64, 64), batch_size = 32, class_mode = 'categorical')
+training_set = train_datagen.flow_from_directory ('Training_Data/', target_size = (64, 64), batch_size = 32, class_mode = 'categorical')
 
-test_set = test_datagen.flow_from_directory('/Users/arnes/Desktop/Tugas_MV/Test_Data/', target_size = (64, 64), batch_size = 32, class_mode = 'categorical')
+test_set = test_datagen.flow_from_directory('Test_Data/', target_size = (64, 64), batch_size = 32, class_mode = 'categorical')
 
 #TRAINING MODEL
 classifier.fit_generator(training_set, steps_per_epoch = 100, epochs = 4, validation_data = test_set, validation_steps = 10)
